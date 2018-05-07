@@ -73,10 +73,10 @@ class Credentials:
         return cls.credentials_list
 
 
-    # @classmethod
-    # def copy_password(cls,site):
-    #     credentials_found = Credentials.find_by_site(site)
-    #     pyperclip.copy(credentials_found.password)
+    @classmethod
+    def copy_password(cls,site):
+        credentials_found = Credentials.find_by_site(site)
+        pyperclip.copy(credentials_found.password)
 
 
     @classmethod
