@@ -50,19 +50,19 @@ class Credentials:
                 return credentials
 
 
-    @classmethod
-    def credentials_exist(cls,site):
-        """
-        Method check if the credentials exist
-        Args:
-            site:login to search if it exists
-        Returns:
-            Boolean: true or false
-        """
-        for credentials in cls.credentials_list:
-            if credentials.site == site:
-                return True
-                return False
+    # @classmethod
+    # def credentials_exist(cls,site):
+    #     """
+    #     Method check if the credentials exist
+    #     Args:
+    #         site:login to search if it exists
+    #     Returns:
+    #         Boolean: true or false
+    #     """
+    #     for credentials in cls.credentials_list:
+    #         if credentials.site == site:
+    #             return True
+    #             return False
 
 
     @classmethod
