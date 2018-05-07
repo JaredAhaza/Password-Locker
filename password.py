@@ -28,12 +28,12 @@ class Credentials:
 
         Credentials.credentials_list.append(self)
 
-    def delete_credentials(self):
-        """
-        deletes credentials from the array
-        """
+    # def delete_credentials(self):
+    #     """
+    #     deletes credentials from the array
+    #     """
 
-        Credentials.credentials_list.remove(self)
+    #     Credentials.credentials_list.remove(self)
     
     @classmethod
     def find_by_site(cls,site):
