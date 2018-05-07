@@ -65,12 +65,12 @@ class Credentials:
                 return False
 
 
-    # @classmethod
-    # def display_credentials(cls):
-    #     """
-    #     method returns existing credentials
-    #     """
-    #     return cls.credentials_list
+    @classmethod
+    def display_credentials(cls):
+        """
+        method returns existing credentials
+        """
+        return cls.credentials_list
 
 
     @classmethod
