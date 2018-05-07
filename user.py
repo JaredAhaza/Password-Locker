@@ -16,9 +16,9 @@ class User:
     @classmethod    
     def number_of_users(cls):
         return f"There are these {cls} user(s)"
-    @classmethod
-    def list_users(cls):
-        return cls.users
+    # @classmethod
+    # def list_users(cls):
+    #     return cls.users
 
 
 
