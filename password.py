@@ -21,12 +21,12 @@ class Credentials:
         self.username = username
         self.password = password
 
-    # def save_credentials(self):
-    #     """
-    #     saves credentials into the empty array
-    #     """
+    def save_credentials(self):
+        """
+        saves credentials into the empty array
+        """
 
-    #     Credentials.credentials_list.append(self)
+        Credentials.credentials_list.append(self)
 
     def delete_credentials(self):
         """
