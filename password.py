@@ -2,24 +2,24 @@ import pyperclip
 import random
 import string
 
-# class Credentials:
+class Credentials:
 
-#     credentials_list = [] #empyt credentials array
-#     """
-#     Generates new instatce of credentials
-#     """
+    credentials_list = [] #empyt credentials array
+    """
+    Generates new instatce of credentials
+    """
 
-#     def __init__(self,site,username,password):
-#         """
-#         Args:
-#         site:new credential in a site
-#         username:new credential user in the site
-#         password:new credential password in the site
-#         """
+    def __init__(self,site,username,password):
+        """
+        Args:
+        site:new credential in a site
+        username:new credential user in the site
+        password:new credential password in the site
+        """
 
-#         self.site = site
-#         self.username = username
-#         self.password = password
+        self.site = site
+        self.username = username
+        self.password = password
 
     def save_credentials(self):
         """
