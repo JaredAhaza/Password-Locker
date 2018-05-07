@@ -35,19 +35,19 @@ class Credentials:
 
         Credentials.credentials_list.remove(self)
     
-    # @classmethod
-    # def find_by_site(cls,site):
-    #     """
-    #     Method takes in the site and returns credentials matching it
-    #     Args:
-    #         site:site to search for
+    @classmethod
+    def find_by_site(cls,site):
+        """
+        Method takes in the site and returns credentials matching it
+        Args:
+            site:site to search for
 
-    #     Returns:
-    #         credentials that matches the site
-    #     """
-    #     for credentials in cls.credentials_list:
-    #         if credentials.site == site:
-    #             return credentials
+        Returns:
+            credentials that matches the site
+        """
+        for credentials in cls.credentials_list:
+            if credentials.site == site:
+                return credentials
 
 
     @classmethod
