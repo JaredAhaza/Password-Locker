@@ -3,8 +3,8 @@ class User:
     class generating new instances of users
     """
 
-    # counter = 0
-    # users = dict()
+    counter = 0
+    users = dict()
 
     def __init__(self,login_password):
 
