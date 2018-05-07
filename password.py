@@ -79,14 +79,14 @@ class Credentials:
         pyperclip.copy(credentials_found.password)
 
 
-    @classmethod
-    def generate_password(cls, pass_length):
-        """
-        Method generatin password
-        """
-        allchar = string.ascii_letters + string.punctuation + string.digits
-        password = ''.join(random.sample(allchar, int(pass_length)))
-        return password
+    # @classmethod
+    # def generate_password(cls, pass_length):
+    #     """
+    #     Method generatin password
+    #     """
+    #     allchar = string.ascii_letters + string.punctuation + string.digits
+    #     password = ''.join(random.sample(allchar, int(pass_length)))
+    #     return password
 
 
 
