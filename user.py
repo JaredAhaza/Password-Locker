@@ -6,12 +6,12 @@ class User:
     counter = 0
     users = dict()
 
-    def __init__(self,login_password):
+    # def __init__(self,login_password):
 
-        self.username = username
-        self.login_password = login_password
-        User.users = {"username":self.username,"password":self.login_password}
-        User.counter+=1
+    #     self.username = username
+    #     self.login_password = login_password
+    #     User.users = {"username":self.username,"password":self.login_password}
+    #     User.counter+=1
 
     @classmethod    
     def number_of_users(cls):
