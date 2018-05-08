@@ -1,4 +1,4 @@
-###Password Locker Application
+#Password Locker Application
 ##Description
 This Application is python based and runs on terminal, it allows a user to register accounts by giving your account name and specifying how long you would like your password to be the user can create new accounts,delete existing accounts and even search accounts.
 ##Behaviour of the application
@@ -12,10 +12,10 @@ Two classes, namely User and Credential are created to create a user and Credent
 Tests to see the behaviour of these classes is done to ensure they function as expected.
 The main file ensures the graphical interface logic is maintained and to communicate to the classes via class methods and properties.
 ##Packages used
-#sys
-#time
-#string
-#random
+sys
+time
+string
+random
 Technology Used
 Python3.6
 Test Driven Development
