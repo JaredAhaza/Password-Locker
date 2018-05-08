@@ -13,18 +13,16 @@ def login():
         usersname = input("Enter username")
         pasword = input ("Enter your password")
     if User.users['username'] == usersname and User.users['password'] == pasword:
-        print(f"welcome"{usersname})
+        print(f"welcome, {usersname}")
 
     else:
         print("wrong password or username")
         print("choose an option: \n 1)register \n 2)Try again")
         data = int(input())
 
-        if input == 1:
-            register
+        if data == 1:
+            register()
         elif data == 2:
-            login()
-        else:
             login()
         else:
             print("There are no such users, please register")
@@ -40,12 +38,11 @@ def register():
     if password1 == password2:
         User(username,password1)
         return True
-
     else:
         register()
         landing_section = True
 
-def addAccount:
+def addAccount():
     """
     Enables addition of credentials
     """
@@ -54,12 +51,13 @@ def addAccount:
     username = ("choose a username")
     email = ("enter emeil address")
     password = int(input("Enter your password"))
+    Credentials(acc,username,email,generate_password(password))
 
 def generate_password(i):
     _all = string.ascii_letters+ string.punctuation+string.digits
     return "".join(random.sample(_all,i))
 
-Credential(acc,username,email,generate_password(password))
+
 def viewall():
     """
     function allows for viewing all the accounts the user has
@@ -78,7 +76,7 @@ def search_account():
     Function to search an account
     """
 
-    accc = input ("which account are you searching for ? ")
+    acc = input ("which account are you searching for ? ")
     screen(Creddential.search_credential(acc))
 
 def landing_section():
@@ -91,19 +89,19 @@ def landing_section():
         """
         loops until login or register function returns True
         """
-        input = int(input("1:login,2:register,3:leave"))
+        input_ = int(input("1:login,2:register,3:leave"))
 
-    if input == 1:
-        return login()
+        if input_ == 1:
+            return login()
 
-    elif input == 2:
-        return register()
+        elif input_ == 2:
+            return register()
 
-    elif input ==3:
-        screen("Thanks for comming here, application is closing")
+        elif input_ ==3:
+            screen("Thanks for comming here, application is closing")
 
-    else:
-        screen("Invalid choice! Try again")
+        else:
+            screen("Invalid choice! Try again")
 
     def main():
         """
@@ -114,9 +112,9 @@ def landing_section():
 
     if decided:
         screen("you are now logged in to the password locker!")
-        loged in = True
+        logedin = True
 
-    while loged in:
+    while logedin:
         choice = int(input("1)create account\n2)view all accounts\n3)delete account\n4)search account\n5)logout"))
     if choice == 1:
         '''
@@ -151,12 +149,12 @@ def landing_section():
         '''
         print("log out")
 
-        logged in = False
+        loggedin = False
         print("bye, thank you for using this app")
 
     else:
         print("bye")
 
 
-if __name__ = '__main__':
-    main()
+if __name__ == '__main__':
+    landing_section()
