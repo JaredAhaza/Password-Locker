@@ -13,7 +13,7 @@ def login():
         usersname = input("Enter username")
         pasword = input ("Enter your password")
     if User.users['username'] == usersname and User.users['password'] == pasword:
-        print(f"welcome",{usersname})
+        print(f"welcome"{usersname})
 
     else:
         print("wrong password or username")

@@ -21,14 +21,14 @@ class TestUser(unittest.TestCase):
 		"""
         sets up the data needed to test User class
         """
-		self.user1 = User("user", "jare2000")
-		self.user2 = User('new user',"jare2000")
+		self.user1 = User("us", "jare2000")
+		self.user2 = User('new us',"jare2000")
 		
 	def test_init(self):
 		"""
         checks whether instances have been well created
         """
-		self.assertEqual(self.user1.username, 'user')
+		self.assertEqual(self.user1.username, 'us')
 		self.assertEqual(self.user1.login_password, "jare2000")
 	def tearDown(self):
 		User.users = dict()
