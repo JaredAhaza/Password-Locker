@@ -6,7 +6,7 @@ class User:
     counter = 0
     users = dict()
 
-    def __init__(self,login_password):
+    def __init__(self,username,login_password):
 
         self.username = username
         self.login_password = login_password

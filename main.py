@@ -10,10 +10,10 @@ def login():
     Method that handles login capabilities of a user
     """
     if User.users:
-        usersname = input("Enter username")
+        username = input("Enter username")
         pasword = input ("Enter your password")
-    if User.users['username'] == usersname and User.users['password'] == pasword:
-        print(f"welcome, {usersname}")
+        if User.username['username'] == username and User.login_password['password'] == pasword:
+            print(f"welcome, {username}")
 
     else:
         print("wrong password or username")
